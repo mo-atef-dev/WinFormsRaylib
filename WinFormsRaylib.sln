@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36301.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsRaylib", "WinFormsRaylib.csproj", "{8EF68F01-3598-4D34-B32B-EB50F789DB04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaylibWinformsHost", "RaylibWinformsHost\RaylibWinformsHost.csproj", "{16163686-4DE7-4472-A156-C6BBB448A10E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EF68F01-3598-4D34-B32B-EB50F789DB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF68F01-3598-4D34-B32B-EB50F789DB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF68F01-3598-4D34-B32B-EB50F789DB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF68F01-3598-4D34-B32B-EB50F789DB04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16163686-4DE7-4472-A156-C6BBB448A10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16163686-4DE7-4472-A156-C6BBB448A10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16163686-4DE7-4472-A156-C6BBB448A10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16163686-4DE7-4472-A156-C6BBB448A10E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {32212DA9-61B1-449E-AEB8-A16929E75632}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="RaylibWinformsHost\**" />
+    <EmbeddedResource Remove="RaylibWinformsHost\**" />
+    <None Remove="RaylibWinformsHost\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="RaylibHost.cs" />
+    <Compile Remove="RaylibMultiThreadedHost.cs" />
+    <Compile Remove="RaylibUIThreadHost.cs" />
+    <Compile Remove="Win32.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="RaylibWinformsHost\RaylibWinformsHost.csproj" />
+  </ItemGroup>
+
+</Project>
