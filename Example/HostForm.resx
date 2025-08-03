@@ -123,7 +123,11 @@
   <data name="label1.Text" xml:space="preserve">
     <value>This is a sample demonstrating an embedded Raylib rendering window inside a WinForms project.
 
-The sample shows interaction in both directions (from the form to Raylib and from Raylib to the form) to show how interactive desktop applications with 3D graphics view can be made.</value>
+The sample shows interaction in both directions (from the form to Raylib and from Raylib to the form) to show how interactive desktop applications with 3D graphics view can be made.
+
+Select the box in the viewport by left clicking it. Once selected, the label below will update indicating whether the box is selected or not.
+
+Press the "Change cube color" button below to interact with the scene by changing the cube color. You can also use the shortcut "Alt + C".</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

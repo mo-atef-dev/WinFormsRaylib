@@ -1,6 +1,6 @@
 ﻿using Color = Raylib_cs.Color;
 
-namespace WinFormsRaylib
+namespace WinFormsRaylib.Example
 {
     internal interface IExampleHost
     {

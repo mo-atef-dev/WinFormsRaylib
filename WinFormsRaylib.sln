@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsRaylib", "WinFormsR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaylibWinformsHost", "RaylibWinformsHost\RaylibWinformsHost.csproj", "{16163686-4DE7-4472-A156-C6BBB448A10E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{5ABEEC7C-DC78-4D49-8934-CBA41E70DD01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8EF68F01-3598-4D34-B32B-EB50F789DB04} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{16163686-4DE7-4472-A156-C6BBB448A10E} = {5ABEEC7C-DC78-4D49-8934-CBA41E70DD01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {32212DA9-61B1-449E-AEB8-A16929E75632}

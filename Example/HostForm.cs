@@ -1,5 +1,6 @@
 using Raylib_cs;
 using System.Numerics;
+using WinFormsRaylib.Example;
 using Color = Raylib_cs.Color;
 
 namespace WinFormsRaylib
@@ -40,6 +41,11 @@ namespace WinFormsRaylib
         private void changeCubeColorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             buttonChangeColor_Click(sender, e);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

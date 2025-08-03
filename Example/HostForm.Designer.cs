@@ -56,7 +56,7 @@
             // buttonChangeColor
             // 
             buttonChangeColor.Anchor = AnchorStyles.Top;
-            buttonChangeColor.Location = new Point(3, 156);
+            buttonChangeColor.Location = new Point(3, 299);
             buttonChangeColor.Name = "buttonChangeColor";
             buttonChangeColor.Size = new Size(216, 23);
             buttonChangeColor.TabIndex = 1;
@@ -83,8 +83,9 @@
             // exitToolStripMenuItem
             // 
             exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            exitToolStripMenuItem.Size = new Size(93, 22);
+            exitToolStripMenuItem.Size = new Size(180, 22);
             exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
             // 
             // editToolStripMenuItem
             // 
@@ -117,14 +118,14 @@
             // 
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(216, 153);
+            label1.Size = new Size(216, 296);
             label1.TabIndex = 2;
             label1.Text = resources.GetString("label1.Text");
             // 
             // labelIndicator
             // 
             labelIndicator.AutoSize = true;
-            labelIndicator.Location = new Point(3, 182);
+            labelIndicator.Location = new Point(3, 325);
             labelIndicator.Name = "labelIndicator";
             labelIndicator.Size = new Size(61, 15);
             labelIndicator.TabIndex = 3;

@@ -1,4 +1,4 @@
-namespace WinFormsRaylib
+namespace WinFormsRaylib.Example
 {
     internal static class Program
     {

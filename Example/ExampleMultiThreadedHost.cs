@@ -3,7 +3,7 @@ using System.Numerics;
 using System.Windows.Forms;
 using Color = Raylib_cs.Color;
 
-namespace WinFormsRaylib
+namespace WinFormsRaylib.Example
 {
     internal class ExampleMultiThreadedHost : RaylibMultiThreadedHost, IExampleHost
     {
@@ -76,18 +76,18 @@ namespace WinFormsRaylib
                 }
 
                 Raylib.BeginDrawing();
-                Raylib.ClearBackground(Raylib_cs.Color.RayWhite);
+                Raylib.ClearBackground(Color.RayWhite);
                 Raylib.DrawFPS(10, 10);
                 Raylib.BeginMode3D(_cam);
                 {
                     Raylib.DrawGrid(100, 1.0f);
                     Raylib.DrawCube(_cubeCenter, _cubeDimensions.X, _cubeDimensions.Y, _cubeDimensions.Z, _cubeColor);
-                    Raylib.DrawCubeWires(_cubeCenter, _cubeDimensions.X, _cubeDimensions.Y, _cubeDimensions.Z, Raylib_cs.Color.Black);
+                    Raylib.DrawCubeWires(_cubeCenter, _cubeDimensions.X, _cubeDimensions.Y, _cubeDimensions.Z, Color.Black);
                     if (IsBoxSelected)
                     {
                         Raylib.DrawCubeWires(_cubeCenter, _cubeDimensions.X + _selectionBoxOffset,
                             _cubeDimensions.Y + _selectionBoxOffset, _cubeDimensions.Z + _selectionBoxOffset,
-                            Raylib_cs.Color.Green);
+                            Color.Green);
                     }
                 }
                 Raylib.EndMode3D();
