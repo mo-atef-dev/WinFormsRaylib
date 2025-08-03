@@ -12,8 +12,7 @@ namespace WinFormsRaylib
         public HostForm()
         {
             InitializeComponent();
-            raylibHost = new ExampleUIThreadHost(hostingPanel, this);
-            //raylibHost = new ExampleMultiThreadedHost(hostingPanel, this);
+            raylibHost = new ExampleMultiThreadedHost(hostingPanel, this);
             Load += HostForm_Load;
         }
 
