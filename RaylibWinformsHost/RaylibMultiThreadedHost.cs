@@ -7,7 +7,6 @@ namespace WinFormsRaylib
     public class RaylibMultiThreadedHost : RaylibHost
     {
         private readonly object _lock = new();
-        Camera3D cam = new Camera3D();
 
         public RaylibMultiThreadedHost(Panel hostingPanel, string windowTitle = "WinFormsRaylib") : base(hostingPanel, windowTitle)
         {
