@@ -31,7 +31,7 @@ Windows Forms is old but mature native Windows GUI framework. It is still suppor
 
 ## Installation
 
-
+[Nuget package link](https://www.nuget.org/packages/RaylibWinformsHost)
 
 ## Usage (TLDR)
 
