@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace WinFormsRaylib
 {
-    public abstract class RaylibHost
+    public abstract class AbstractRaylibHost
     {
         protected readonly Panel _hostingPanel;
         protected readonly string _windowTitle;
         protected Vector2 _hostPanelSize = new(800, 600);
 
-        public RaylibHost(Panel hostingPanel, string windowTitle = "WinFormsRaylib")
+        public AbstractRaylibHost(Panel hostingPanel, string windowTitle = "WinFormsRaylib")
         {
             _hostingPanel = hostingPanel;
             _windowTitle = windowTitle;

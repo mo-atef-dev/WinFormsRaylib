@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace WinFormsRaylib
 {
-    public class RaylibMultiThreadedHost : RaylibHost
+    public class RaylibMultiThreadedHost : AbstractRaylibHost
     {
         private readonly object _lock = new();
 
