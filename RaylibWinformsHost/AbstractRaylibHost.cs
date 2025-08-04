@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace WinFormsRaylib
 {
+    /// <summary>
+    /// Abstract base class for a WinForms Raylib host
+    /// </summary>
     public abstract class AbstractRaylibHost
     {
         protected readonly Panel _hostingPanel;
@@ -23,7 +26,15 @@ namespace WinFormsRaylib
             _hostPanelSize.Y = hostingPanel.Height;
         }
 
+        /// <summary>
+        /// Performs any required initialization and starts the Raylib thread
+        /// </summary>
         public abstract void Start();
+
+        /// <summary>
+        /// This is called once before entering the main Raylib loop but after starting the Raylib thread
+        /// Override this function for custom initialization before running the Raylib loop
+        /// </summary>
         protected virtual void RaylibInit()
         {
             Raylib.SetTargetFPS(60);
@@ -32,10 +43,30 @@ namespace WinFormsRaylib
 
             Raylib.SetExitKey(0);
         }
+
+        /// <summary>
+        /// This is the Raylib thread function (where the main loop is called)
+        /// Override this for complete control on what happens once the thread starts
+        /// </summary>
+        /// <param name="hostHandle">The handle to the hosting WinForms Panel</param>
         protected abstract void RaylibThread(object? hostHandle);
+
+        /// <summary>
+        /// This funciton runs the main Raylib loop
+        /// Override this function for custom control of the Raylib loop
+        /// </summary>
         protected abstract void RaylibLoop();
+
+        /// <summary>
+        /// This is the function called each iteration of the Raylib loop
+        /// Override this function for your custom Raylib loop iteration
+        /// </summary>
         protected abstract void RaylibIteration();
 
+        /// <summary>
+        /// Attaches the Raylib window to the WinForms Panel
+        /// </summary>
+        /// <param name="hostHandle">The handle to the hosting WinForms Panel</param>
         protected virtual void RaylibAttachWindow(object? hostHandle)
         {
             if (hostHandle == null)
@@ -66,6 +97,9 @@ namespace WinFormsRaylib
             Win32.SetFocus((nint)hostHandle);
         }
 
+        /// <summary>
+        /// Update the size of the Raylib window to match the host panel size
+        /// </summary>
         protected virtual void UpdateWindowSize()
         {
             // Update the window size to match the parent

@@ -4,6 +4,9 @@ using System.Windows.Forms;
 
 namespace WinFormsRaylib
 {
+    /// <summary>
+    /// A Raylib host that runs the Raylib loop in a separate background thread
+    /// </summary>
     public class RaylibMultiThreadedHost : AbstractRaylibHost
     {
         private readonly object _lock = new();
