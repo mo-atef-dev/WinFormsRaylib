@@ -32,6 +32,9 @@ namespace WinFormsRaylib.Example
         {
             string message = IsBoxSelected ? "Box selected" : "Box not selected";
 
+            /***
+             * When wanting to change something on the form from the Raylib thread, you need to use the Invoke/BeginInvoke method.
+             */
             _parentForm.BeginInvoke(() =>
             {
                 _parentForm.SetIndicatorText(message);
@@ -48,6 +51,10 @@ namespace WinFormsRaylib.Example
 
         public void ChangeCubeColor(Color color)
         {
+            /***
+             * When wanting to change something used in the Raylib thread from the form, you need to use 
+             * a synchronization lock.
+             */
             lock (_lock)
             {
                 _cubeColor = color; 
@@ -56,6 +63,9 @@ namespace WinFormsRaylib.Example
 
         protected override void RaylibIteration()
         {
+            /***
+             * The lock is used to synchronize access to the shared objects used in the Raylib thread.
+             */
             lock (_lock)
             {
                 Raylib.UpdateCamera(ref _cam, CameraMode.Orbital);
