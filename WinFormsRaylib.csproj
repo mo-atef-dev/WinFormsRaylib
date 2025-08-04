@@ -10,12 +10,12 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Windows Forms Raylib Host</Title>
     <Authors>mo-atef</Authors>
-    <PackageIcon>winforms-raylib.png</PackageIcon>
-    <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <Copyright>Copyright (c) Mohamed Atef 2025</Copyright>
-    <PackageTags>windows forms; windows; forms; winforms; raylib; graphics; 3d; render</PackageTags>
-    <Description>A very simple Windows forms Raylib host.</Description>
-    <RepositoryUrl>https://github.com/mo-atef-dev/WinFormsRaylib</RepositoryUrl>
+    <PackageIcon></PackageIcon>
+    <PackageReadmeFile></PackageReadmeFile>
+    <Copyright></Copyright>
+    <PackageTags></PackageTags>
+    <Description></Description>
+    <RepositoryUrl></RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
