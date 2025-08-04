@@ -11,6 +11,11 @@ namespace WinFormsRaylib
     {
         private readonly object _lock = new();
 
+        /// <summary>
+        /// A Raylib host that runs the Raylib loop in a separate background thread
+        /// </summary>
+        /// <param name="hostingPanel">The Panel object that will host the Raylib window and set its size</param>
+        /// <param name="windowTitle">The title of the Raylib window (this is not shown anyway but it is a required parameter to initialize Raylib and it can be left as the default)</param>
         public RaylibMultiThreadedHost(Panel hostingPanel, string windowTitle = "WinFormsRaylib") : base(hostingPanel, windowTitle)
         {
             _hostingPanel.Resize += hostingPanel_Resize;
