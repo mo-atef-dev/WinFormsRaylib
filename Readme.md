@@ -2,7 +2,7 @@
 
 This is a simple project to host a Raylib rendering window inside a Windows form. This allows creating Windows Forms applications with a Raylib 3D Viewport for displaying 3D content (or just rendering 2d graphics).
 
-![Raylib in Windows Forms!](static/preview.gif)
+![Raylib in Windows Forms!](./Static/preview.gif)
 
 ## Why?
 
@@ -92,7 +92,7 @@ The form code:
 
 Congratulations! Now you can are using Raylib in a Windows Forms panel.
 
-![Raylib in Windows Forms!](static/sample-window.png)
+![Raylib in Windows Forms!](./Static/sample-window.png)
 
 ## Usage (Advanced)
 
