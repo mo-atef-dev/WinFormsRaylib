@@ -7,6 +7,15 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Windows Forms Raylib Host</Title>
+    <Authors>mo-atef</Authors>
+    <PackageIcon>winforms-raylib.png</PackageIcon>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Copyright>Copyright (c) Mohamed Atef 2025</Copyright>
+    <PackageTags>windows forms; windows; forms; winforms; raylib; graphics; 3d; render</PackageTags>
+    <Description>A very simple Windows forms Raylib host.</Description>
+    <RepositoryUrl>https://github.com/mo-atef-dev/WinFormsRaylib</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +37,17 @@
 
   <ItemGroup>
     <ProjectReference Include="RaylibWinformsHost\RaylibWinformsHost.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Static\winforms-raylib.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
